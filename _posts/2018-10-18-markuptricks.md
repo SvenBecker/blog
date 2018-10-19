@@ -1,7 +1,6 @@
 ---
 title: "Layout with Content"
 date: 2018-10-19T
-author: sven_becker
 header:
     image: assets/images/pexels-photo-1492239.jpeg
 ---

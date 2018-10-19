@@ -1,6 +1,5 @@
 ---
 title: First Post
-author: sven_becker
 date: 2018-10-19T14:54:13+02:00
 ---
 <section id="table-of-contents" class="toc">

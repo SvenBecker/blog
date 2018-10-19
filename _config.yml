@@ -101,15 +101,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Sven Becker"
+  avatar           : "/assets/images/Patrick_Star.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Data Science Practitioner and Web Development Amateur"
+  location         : "Hamburg, Germany"
+  email            : "SvenBecker19@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:SvenBecker19@gmail.com # url: mailto:your.name@email.com
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://svenbecker.github.io/blog/" # url: "https://your-website.com"
@@ -218,7 +218,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -276,6 +276,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections (https://jekyllrb.com/docs/collections/)
+collections:
+  photo_gallery:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -290,3 +296,12 @@ defaults:
       comments: # true
       share: true
       related: true
+  
+      # _photo_gallery
+  - scope:
+      path: ""
+      type: photo_gallery
+    values:
+      layout: single
+      author_profile: false
+      share: true

@@ -1,6 +1,27 @@
 ---
-layout: home
+layout: splash
+# layout: home
+permalink: /
 author_profile: true
 header:
   overlay_image: /assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png
+excerpt: 'A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and portfolios hosted on GitHub or your own server.'
+feature_row:
+  - image_path: /assets/images/img_gallery/pexels-photo-303159.jpeg
+    alt: "Blog"
+    title: "Blog"
+    excerpt: "This is my Blog"
+    url: "/year-archive/"
+    btn_class: "btn--primary"
+    btn_label: "To my Blog!"
+  - image_path: /assets/images/pexels-photo-1167021.jpeg
+    alt: "Gallery"
+    title: "Gallery"
+    excerpt: "This are some galleries!"
+    url: "collection-archive"
+    btn_class: "btn--primary"
+    btn_label: "To my Gallery!"
 ---
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
