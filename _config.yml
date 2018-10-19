@@ -293,11 +293,11 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
   
-      # _photo_gallery
+  # _photo_gallery
   - scope:
       path: ""
       type: photo_gallery
@@ -305,3 +305,11 @@ defaults:
       layout: single
       author_profile: false
       share: true
+
+  # sidebar-sample
+  - scope:
+      path: ""
+      type: sidebar-sample
+    values:
+      sidebar:
+        nav: "sidebar-sample"
