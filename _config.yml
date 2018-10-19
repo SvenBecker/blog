@@ -22,7 +22,7 @@ name                     : "Sven Becker"
 description              : "My awesome Blog!"
 url                      : https://svenbecker.github.io #http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
-repository               : "svenbecker/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "SvenBecker/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
