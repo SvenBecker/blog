@@ -10,7 +10,8 @@ def get_args():
     return parser.parse_args()
 
 
-def build_md(gallery_name, images_folder, title, excerpt):
+def built_md(gallery_name, images_folder, title, excerpt):
+    # writes a markdown file
     with open(Path(".") / ".." / "_photo_gallery" / gallery_name, "w") as f:
         f.write('---\n')
         f.write(f'title: "{title}"\n')
@@ -26,9 +27,9 @@ def build_md(gallery_name, images_folder, title, excerpt):
         f.write('   - title:\n')
         f.write('     text:\n')
         f.write('gallery:\n')
-        urls, teaser = get_imgs(images_folder)
+        urls, imgs = get_imgs(images_folder)
         i = 1
-        for u, t in zip(urls, teaser):
+        for u, t in zip(urls, imgs):
             f.write(f'   - url: {u}\n')
             f.write(f'     image_path: {t}\n')
             f.write(f'     alt: "placeholder image {i}"\n')
@@ -38,16 +39,18 @@ def build_md(gallery_name, images_folder, title, excerpt):
 
 
 def get_imgs(images_folder):
+    # returns image file informations
     path = Path(".") / ".." / "assets" / "images" / images_folder
     img_str = f'assets/images/{images_folder}/'
     url_str = f'/{img_str}'
     urls, imgs = [], []
     for img in path.iterdir():
-        urls.append(url_str + img.name)
-        imgs.append(img_str + img.name)
+        if img.name.endswith("png") or img.name.endswith("jpeg"):
+            urls.append(url_str + img.name)
+            imgs.append(img_str + img.name)
     return urls, imgs    
 
 
 if __name__ == "__main__":
     args = get_args()
-    build_md(args.gallery, args.images, args.title, args.excerpt)
+    built_md(args.gallery, args.images, args.title, args.excerpt)
