@@ -1,6 +1,11 @@
 from argparse import ArgumentParser
 from pathlib import Path
 
+
+# background image
+bg_image = "assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png"
+
+
 def get_args():
     parser = ArgumentParser()
     parser.add_argument('-i', '--images', help='Image folder name. Has to be located in /assets/images/', default="img_gallery", type=str)
@@ -17,8 +22,8 @@ def built_md(gallery_name, images_folder, title, excerpt):
         f.write(f'title: "{title}"\n')
         f.write(f'excerpt: {excerpt}\n')
         f.write('header:\n')
-        f.write('   image: /assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png\n')
-        f.write('   teaser: assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png\n')
+        f.write(f'   image: /{bg_image}\n')
+        f.write(f'   teaser: {bg_image}\n')
         f.write('sidebar:\n')
         f.write('   - title:\n')
         f.write('     image:\n')
