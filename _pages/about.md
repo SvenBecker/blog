@@ -1,4 +1,5 @@
 ---
+layout: 
 title: "About"
 permalink: /about/
 date: 2018-10-18T

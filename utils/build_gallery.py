@@ -3,7 +3,11 @@ from pathlib import Path
 
 
 # background image
-bg_image = "assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png"
+# bg_image = "assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png
+# bg_image2 = f"{bg_image}"
+bg_image = ""
+bg_image2 = ""
+image_formats = (".jpg", ".JPG", ".png", ".PNG", ".jpeg", ".JPEG")
 
 
 def get_args():
@@ -22,7 +26,7 @@ def built_md(gallery_name, images_folder, title, excerpt):
         f.write(f'title: "{title}"\n')
         f.write(f'excerpt: {excerpt}\n')
         f.write('header:\n')
-        f.write(f'   image: /{bg_image}\n')
+        f.write(f'   image: {bg_image2}\n')
         f.write(f'   teaser: {bg_image}\n')
         f.write('sidebar:\n')
         f.write('   - title:\n')
@@ -50,7 +54,7 @@ def get_imgs(images_folder):
     url_str = f'/{img_str}'
     urls, imgs = [], []
     for img in path.iterdir():
-        if img.name.endswith("png") or img.name.endswith("jpeg"):
+        if img.name.endswith(image_formats):
             urls.append(url_str + img.name)
             imgs.append(img_str + img.name)
     return urls, imgs    
