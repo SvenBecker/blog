@@ -2,8 +2,10 @@
 main:
   - title: "Blog"
     url: /year-archive/
+  - title: "Tutorials"
+    url: /tutorials-archive/
   - title: "Gallery"
-    url: /collection-archive/
+    url: /gallery-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "About"
@@ -11,7 +13,8 @@ main:
 
 # sidebar navigation list sample
 sidebar-sample:
-  - title: "Parent Page A"
+  - title: "Blog"
+    url: /year-archive/
     children:
       - title: "Child Page A1"
         url: /
@@ -21,7 +24,7 @@ sidebar-sample:
         url: /
       - title: "Child Page A4"
         url: /
-  - title: "Parent Page B"
+  - title: "Tutorials"
     children:
       - title: "Child Page B1"
         url: /
@@ -33,7 +36,7 @@ sidebar-sample:
         url: /
       - title: "Child Page B5"
         url: /
-  - title: "Parent Page C"
+  - title: "Galleries"
     children:
       - title: "Child Page C1"
         url: /
@@ -45,9 +48,38 @@ sidebar-sample:
         url: /
       - title: "Child Page C5"
         url: /
-  - title: "Parent Page D"
+  - title: "About"
+    url: /about/
     children:
       - title: "Child Page D1"
         url: /
       - title: "Child Page D2"
+        url: /
+
+sidebar-blog:
+  - title: "Computer Vision"
+    children:
+      - title: "Style Transfer"
+        url: /
+      - title: "Image Colorization"
+        url: /
+  - title: "Natural Language Processing"
+    children:
+      - title: "Language Model"
+        url: /
+      - title: "Tokenizer"
+        url: /
+
+sidebar-tutorials:
+  - title: "Kaggle Challenges"
+    children:
+      - title: "House Prices"
+        url: /tutorials/house_prices/
+      - title: "PUBG"
+        url: /
+  - title: "Natural Language Processing"
+    children:
+      - title: "Language Model"
+        url: /
+      - title: "Tokenizer"
         url: /

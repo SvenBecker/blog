@@ -1,8 +1,11 @@
 ---
-title: Galleries
 layout: collection
-permalink: /gallery-archive/
-collection: photo_gallery
+title: "Tutorials"
+collection: tutorials
+permalink: /tutorials-archive/
+author_profile: false
+sidebar:
+  nav: "sidebar-tutorials"
 entries_layout: grid
 classes: wide
 header:

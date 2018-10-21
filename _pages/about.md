@@ -1,18 +1,23 @@
 ---
-layout: 
+layout: single
 title: "About"
 permalink: /about/
-date: 2018-10-18T
+excerpt: "I'm an ongoing deep learning practioner who also tries to dive into blogging."
 sidebar:
   nav: "sidebar-sample"
+toc: true
 ---
+## About this Site
 
-This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
+## Designed
 
-> Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi'a coladas. (And gettin' caught in the rain.)
+This website is designed for everyone who wants to get some insight in machine learning and related fields.
 
-...or something like this:
+## Credits
 
-> The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.
+### Themes, Images and Icons:
 
-You should probably delete this page and create new pages for your content. Have fun!
+- [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
+- [Pexels](https://www.pexels.com)
+- [Unsplash](https://unsplash.com)
+- [Font Awesome](http://fontawesome.io/)

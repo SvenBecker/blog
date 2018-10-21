@@ -1,16 +1,9 @@
 ---
 title: First Post
+excerpt: "Post displaying the various ways of highlighting code in Markdown."
 date: 2018-10-19T14:54:13+02:00
+toc: true
 ---
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
 
 ## Just A Basic Blogpost!
 

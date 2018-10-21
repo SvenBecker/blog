@@ -2,8 +2,7 @@
 title: "Asia Gallery"
 excerpt: Image Gallery
 header:
-   image: 
-   teaser: 
+   teaser: assets/images/asia_imgs/20180811_191852.jpg
 sidebar:
    - title:
      image:

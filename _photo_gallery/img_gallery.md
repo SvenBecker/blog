@@ -1,9 +1,7 @@
 ---
-layout: splash
 title: "Image Gallery"
 excerpt: Image Gallery
 header:
-   image: /assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png
    teaser: assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png
 sidebar:
    - title:

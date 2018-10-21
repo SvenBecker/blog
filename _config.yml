@@ -12,14 +12,14 @@
 
 # theme                    : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "SBlog"
+title                    : "DeepLayers"
 title_separator          : "-"
 name                     : "Sven Becker"
-description              : "My awesome Blog!"
+description              : "Blog, Tutorials and Challenges."
 url                      : https://svenbecker.github.io #http://localhost:4000 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" #"/blog" # the subpath of your site, e.g. "/blog"
 repository               : "SvenBecker/svenbecker.github.io" # "SvenBecker/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -281,6 +281,9 @@ collections:
   photo_gallery:
     output: true
     permalink: /:collection/:path/
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -302,9 +305,20 @@ defaults:
       path: ""
       type: photo_gallery
     values:
-      layout: single
+      layout: splash
       author_profile: false
       share: true
+
+  # _tutorials
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      related: true
+      toc: true
 
   # sidebar-sample
   - scope:
@@ -313,3 +327,19 @@ defaults:
     values:
       sidebar:
         nav: "sidebar-sample"
+
+  # sidebar-blog
+  - scope:
+      path: ""
+      type: sidebar-blog
+    values:
+      sidebar:
+        nav: "sidebar-blog"
+
+  # sidebar-tutorials
+  - scope:
+      path: ""
+      type: sidebar-tutorials
+    values:
+      sidebar:
+        nav: "sidebar-tutorials"
