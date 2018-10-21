@@ -47,7 +47,7 @@ project
 train = pd.read_csv("data/train.csv", nrows=1000)
 ```
 
-
+In the following I will use some functions I prepared in advance. You can view the code for the functions [here](https://google.com).
 ```python
 def get_cats(df):
     cats = []
