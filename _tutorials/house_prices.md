@@ -1,5 +1,5 @@
 ---
-title: Kaggle House Prices Challenge
+title: House Prices Challenge
 date: 2018-10-20T
 header:
   teaser: assets/images/tutorials/house_prices/logo.png
@@ -16,6 +16,7 @@ tags:
 toc: true
 ---
 ## Before we can start
+
 ### Load Packages
 First we have to import the most important packages: Numpy and Pandas.
 ```python

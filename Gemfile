@@ -9,15 +9,13 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# gem "github-pages", group: :jekyll_plugins
-
 # To upgrade, run `bundle update`.
 
 # gem "jekyll", "~> 3.5"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache"
 gem "minimal-mistakes-jekyll"
-# gem "jekyll-paginate"
+# gem 'tzinfo-data'         # for Windows
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
