@@ -4,7 +4,7 @@ date: 2018-10-20T
 header:
   teaser: assets/images/tutorials/pubg/PUBG_teaser.jpg
   overlay_image: /assets/images/tutorials/pubg/overlay_pubg.jpg
-excerpt: ""
+excerpt: "Best strategy to win in PUBG"
 categories:
   - programming
   - kaggle
@@ -13,15 +13,12 @@ tags:
   - python
   - competition
 feature_row:
-        - image_path: assets/images/pexels-photo-1492239.jpeg
-          alt: "Image Placeholder Code Snippets"
-          caption: "To code snippets"
-          url: /code-archive/
-        - image_path: assets/images/pexels-photo-1492239.jpeg
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
           alt: "Image Placeholder Code Snippets"
           url: "/code-archive/"
-          btn_label: "To Code Snippets"
-          btn_class: "btn--info"
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
+          alt: "Image Placeholder Code Snippets"
+          url: "/code-archive/"
 ---
 # What's the best strategy to win in PUBG?
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "utils_data.py "
+title: "utils_data"
 classes: wide
 sidebar:
     nav: "sidebar-tutorials"
