@@ -13,11 +13,11 @@ tags:
   - python
   - competition
 feature_row:
-        - image_path: assets/images/pexels-photo-1492239.jpeg
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
           alt: "Image Placeholder Code Snippets"
           caption: "To code snippets"
           url: /code-archive/
-        - image_path: assets/images/pexels-photo-1492239.jpeg
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
           alt: "Image Placeholder Code Snippets"
           url: "/code-archive/"
           btn_label: "To Code Snippets"
