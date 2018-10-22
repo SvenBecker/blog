@@ -15,7 +15,7 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache"
 gem "minimal-mistakes-jekyll"
-# gem 'tzinfo-data'         # for Windows
+gem 'tzinfo-data'         # for Windows
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
