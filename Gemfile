@@ -17,7 +17,7 @@ gem "jekyll-include-cache"
 gem "minimal-mistakes-jekyll"
 
 # for Windows
-# gem 'tzinfo-data'         
+gem 'tzinfo-data'         
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"

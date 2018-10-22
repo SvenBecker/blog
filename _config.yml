@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Sven Becker"
-  avatar           : "/assets/images/Patrick_Star.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile_pic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Practitioner and Web Development Amateur"
   location         : "Hamburg, Germany"
   email            : "SvenBecker19@gmail.com"
@@ -297,6 +297,9 @@ defaults:
       type: posts
     values:
       layout: single
+      toc: true
+      toc_sticky: true
+      toc_label: "Table of Content"
       author_profile: true
       read_time: true
       comments: true
@@ -321,9 +324,19 @@ defaults:
       author_profile: false
       share: true
       related: true
+      comments: true
       toc: true
+      toc_sticky: true
+      toc_label: "Table of Content"
       sidebar:
         nav: "sidebar-tutorials"
+      feature_row:
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
+          alt: "Image Placeholder Code Snippets"
+          url: "/code-archive/"
+        - image_path: /assets/images/pexels-photo-1492239.jpeg
+          alt: "Tutorial Archive"
+          url: "/tutorials-archive/"
   
   # _code_snippets
   - scope:

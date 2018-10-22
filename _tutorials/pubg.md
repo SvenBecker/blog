@@ -12,13 +12,6 @@ categories:
 tags:
   - python
   - competition
-feature_row:
-        - image_path: /assets/images/pexels-photo-1492239.jpeg
-          alt: "Image Placeholder Code Snippets"
-          url: "/code-archive/"
-        - image_path: /assets/images/pexels-photo-1492239.jpeg
-          alt: "Image Placeholder Code Snippets"
-          url: "/code-archive/"
 ---
 # What's the best strategy to win in PUBG?
 
@@ -28,16 +21,26 @@ Objective:
 Data:
 - 65,000 games' worth of anonymized player data
 
-<h2>Project Folder Tree</h2>
+<h2>Directory Structure</h2>
 
 ```bash
-pubg project                # project name
-├── data                    # folder which contains data sets
-|  └── train.csv            # train sample
-|  └── test.csv             # test sample
-├── pubg.ipynb              # main file
-├── utils_data.py           # contains some utility functions
+.                         # root folder
+├── data                  # folder which contains data sets
+|  └── train.csv          # train sample
+|  └── test.csv           # test sample
+├── pubg.ipynb            # main file
+├── utils_data.py         # contains some utility functions
 ```
+
+<details><summary><b>Directory Structure</b></summary>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.                         # root folder</span>
+├── data                  # folder which contains data sets
+|  └── train.csv          # train sample
+|  └── test.csv           # test sample
+├── pubg.ipynb            # main file
+├── utils_data.py         # contains some utility functions
+</code></pre></div></div>
+</details>
 
 ## Lets get it started
 
@@ -117,14 +120,13 @@ def df_info(df: pd.DataFrame, show_rows: int=2, horizontal: bool=True, percentil
             
     # show all rows and columns, no matter how large the dataframe is
     with pd.option_context("display.max_rows", None, "display.max_columns", None):
-        display(info_df) 
+        display(info_df)
 ```
 
 
 ```python
 df_info(train, horizontal=False, percentiles=[.5], includes="all")
 ```
-
 
 <div style="overflow-y:auto;">
 <style scoped>
@@ -466,7 +468,6 @@ df_info(train, horizontal=False, percentiles=[.5], includes="all")
   </tbody>
 </table>
 </div>
-
 
 
 ```python
