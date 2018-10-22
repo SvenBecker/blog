@@ -47,12 +47,12 @@ pubg project                # project name
 ![PUBG Start](https://media3.giphy.com/media/3oKIPmaM8aFolCcuI0/giphy.gif?cid=3640f6095bcd07f94d6745734149843e)
 
 ```python
-% matplotlib inline
+%matplotlib inline
 
 import pandas as pd
 import numpy as np
 
-from IPython.core.display import display
+from data_utils import df_info
 ```
 
 We will start by importing required packages and loading the training set. `data_utils` is a file I prepared in advance some useful function utilities especially when working with tabular data.
@@ -129,7 +129,7 @@ df_info(train, horizontal=False, percentiles=[.5], includes="all")
 ```
 
 
-<div>
+<div style="overflow-y:auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
