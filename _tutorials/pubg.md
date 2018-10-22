@@ -4,7 +4,7 @@ date: 2018-10-20T
 header:
   teaser: assets/images/tutorials/pubg/PUBG_teaser.jpg
   overlay_image: /assets/images/tutorials/pubg/overlay_pubg.jpg
-excerpt: "Insight by doing the Kaggle house prices competiton"
+excerpt: ""
 categories:
   - programming
   - kaggle
@@ -12,42 +12,64 @@ categories:
 tags:
   - python
   - competition
-toc: true
+feature_row:
+        - image_path: assets/images/pexels-photo-1492239.jpeg
+          alt: "Image Placeholder Code Snippets"
+          caption: "To code snippets"
+          url: /code-archive/
+        - image_path: assets/images/pexels-photo-1492239.jpeg
+          alt: "Image Placeholder Code Snippets"
+          url: "/code-archive/"
+          btn_label: "To Code Snippets"
+          btn_class: "btn--info"
 ---
+# What's the best strategy to win in PUBG?
 
+Objective:
+- Predict 
 
+Data:
+- 65,000 games' worth of anonymized player data
+
+<h2>Project Folder Tree</h2>
+
+```bash
+pubg project                # project name
+├── data                    # folder which contains data sets
+|  └── train.csv            # train sample
+|  └── test.csv             # test sample
+├── pubg.ipynb              # main file
+├── utils_data.py           # contains some utility functions
+```
+
+## Lets get it started
+
+![PUBG Start](https://media3.giphy.com/media/3oKIPmaM8aFolCcuI0/giphy.gif?cid=3640f6095bcd07f94d6745734149843e)
 
 ```python
+% matplotlib inline
+
 import pandas as pd
 import numpy as np
 
 from IPython.core.display import display
 ```
 
-```
-project
-│   pubg.ipynb    
-│
-└───data
-│   │   train.csv
-│   │   test.csv
-│   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
-```
+We will start by importing required packages and loading the training set. `data_utils` is a file I prepared in advance some useful function utilities especially when working with tabular data.
+You can view the code of the file [here](/code_snippets/utils_data/).
+
+**Tip!** The `csv_read()` parameter `nrows=` can be used to limit the number of imported rows to the number given. This might be practical for performance reasons in case you don't need the whole dataset and just want to do some minor data analysis or for function testing purposes etc.. If `nrows=None` everything will be loaded.
+{: .notice--info}
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
 ```python
-train = pd.read_csv("data/train.csv", nrows=1000)
+train = pd.read_csv("data/train.csv", nrows=None)
 ```
 
-In the following I will use some functions I prepared in advance. You can view the code for the functions [here](https://google.com).
+In the following I will use some functions I prepared in advance. You can view the code for the functions [here](/code_snippets/utils_data/).
+
 ```python
 def get_cats(df):
     cats = []
@@ -456,3 +478,5 @@ def trn_val_split(df, size=0.8):
     trn, val = df.iloc[idxs], df.drop([idxs])
     return trn, val
 ```
+
+{% include feature_row %}

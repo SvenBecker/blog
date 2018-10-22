@@ -284,6 +284,9 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:path/
+  code_snippets:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -315,10 +318,24 @@ defaults:
       type: tutorials
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       related: true
       toc: true
+      sidebar:
+        nav: "sidebar-tutorials"
+  
+  # _code_snippets
+  - scope:
+      path: ""
+      type: code_snippets
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      classes: wide
+      sidebar:
+        nav: "sidebar-tutorials"
 
   # sidebar-sample
   - scope:

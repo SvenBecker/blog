@@ -6,10 +6,10 @@ main:
     url: /tutorials-archive/
   - title: "Gallery"
     url: /gallery-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
   - title: "About"
     url: /about/
+  - title: "Home"
+    url: /
 
 # sidebar navigation list sample
 sidebar-sample:

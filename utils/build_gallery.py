@@ -1,33 +1,29 @@
 from argparse import ArgumentParser
 from pathlib import Path
 
-
-# background image
-# bg_image = "assets/images/6-sparkling-lights-overlay-effects-real-particles_vjmlvqhqe__F0000.png
-# bg_image2 = f"{bg_image}"
-bg_image = ""
-bg_image2 = ""
 image_formats = (".jpg", ".JPG", ".png", ".PNG", ".jpeg", ".JPEG")
 
 
 def get_args():
     parser = ArgumentParser()
-    parser.add_argument('-i', '--images', help='Image folder name. Has to be located in /assets/images/', default="img_gallery", type=str)
+    parser.add_argument('-i', '--images', help='Image folder name. Has to be located in /assets/images/galleries', default="img_gallery", type=str)
     parser.add_argument('-g', '--gallery', help='Gallery file name', default="pgallery.md", type=str)
     parser.add_argument('-t', '--title', help='Page title for the gallery', default="Gallery", type=str)
     parser.add_argument('-e', '--excerpt', help='Page description', default="Image Gallery", type=str)
+    parser.add_argument('-o', '--overlay', help='Select overlay image', default="", type=str)
+    parser.add_argument('-ti', '--teaser', help='Select teaser image', default="", type=str)
     return parser.parse_args()
 
 
-def built_md(gallery_name, images_folder, title, excerpt):
+def built_md(gallery_name, images_folder, title, excerpt, overlay_image, teaser_image):
     # writes a markdown file
     with open(Path(".") / ".." / "_photo_gallery" / gallery_name, "w") as f:
         f.write('---\n')
         f.write(f'title: "{title}"\n')
         f.write(f'excerpt: {excerpt}\n')
         f.write('header:\n')
-        f.write(f'   image: {bg_image2}\n')
-        f.write(f'   teaser: {bg_image}\n')
+        f.write(f'   overlay_image: {overlay_image}\n')
+        f.write(f'   teaser: {teaser_image}\n')
         f.write('sidebar:\n')
         f.write('   - title:\n')
         f.write('     image:\n')
@@ -49,8 +45,8 @@ def built_md(gallery_name, images_folder, title, excerpt):
 
 def get_imgs(images_folder):
     # returns image file informations
-    path = Path(".") / ".." / "assets" / "images" / images_folder
-    img_str = f'assets/images/{images_folder}/'
+    path = Path(".") / ".." / "assets" / "images" / "galleries" / images_folder
+    img_str = f'assets/images/galleries/{images_folder}/'
     url_str = f'/{img_str}'
     urls, imgs = [], []
     for img in path.iterdir():
@@ -62,4 +58,7 @@ def get_imgs(images_folder):
 
 if __name__ == "__main__":
     args = get_args()
-    built_md(args.gallery, args.images, args.title, args.excerpt)
+    img_path = "/assets/images/galleries/"
+    overlay = img_path + args.overlay
+    teaser = img_path + args.teaser
+    built_md(args.gallery, args.images, args.title, args.excerpt, overlay, teaser)
