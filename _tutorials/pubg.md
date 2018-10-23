@@ -38,7 +38,7 @@ Data:
 |  └── train.csv          # train sample
 |  └── test.csv           # test sample
 ├── pubg.ipynb            # main file
-├── utils_data.py         # contains some utility functions
+└── utils_data.py         # contains some utility functions
 </code></pre></div></div>
 </details>
 

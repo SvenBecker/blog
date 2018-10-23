@@ -293,7 +293,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ""    # an empty string here means all files in the project
       type: posts
     values:
       layout: single
