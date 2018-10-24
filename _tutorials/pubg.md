@@ -13,6 +13,10 @@ tags:
   - python
   - competition
 ---
+
+**Notice!** This page is still in progress!
+{: .notice--primary}
+
 # What's the best strategy to win in PUBG?
 
 Objective:

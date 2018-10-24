@@ -13,8 +13,11 @@ categories:
 tags:
   - python
   - competition
-toc: true
 ---
+
+**Notice!** This page is still in progress!
+{: .notice--primary}
+
 ## Before we can start
 
 ### Load Packages

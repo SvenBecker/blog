@@ -47,7 +47,7 @@ def df_info(df: pd.DataFrame,
             if not isinstance(col, includes):
                 df.drop([col], axis=1, inplace=True)
 
-    if len(df.columns) == 0: raise ValueError(f'DataFrame is empty!')
+    if len(df.columns) == 0: raise ValueError('DataFrame is empty!')
 
     # data types
     types = pd.DataFrame(df.dtypes, columns=["dtype"])

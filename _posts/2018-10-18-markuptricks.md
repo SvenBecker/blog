@@ -5,6 +5,10 @@ header:
     image: assets/images/pexels-photo-1492239.jpeg
 ---
 
+**Notice!** This page is still in progress!
+{: .notice--primary}
+
+
 A variety of common markup showing how the theme styles them.
 
 # Header one
