@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "utils_data"
+title: "utils_data.py"
 classes: wide
 sidebar:
     nav: "sidebar-tutorials"
+excerpt: ""
 ---
 
-```python
+{% highlight python linenos %}
 import pandas as pd
 import numpy as np
-
 
 def df_info(df: pd.DataFrame,
             show_rows: int = 0,
@@ -76,4 +76,4 @@ def df_info(df: pd.DataFrame,
             display(info_df)
         except ImportError:
             print(info_df)
-```
+{% endhighlight %}
