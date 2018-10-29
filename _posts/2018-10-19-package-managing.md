@@ -25,6 +25,8 @@ python modules and packages.
 
 ### Virtualenv Environment
 
+### Pipenv Environment
+
 ### Conda Environment
 
 When doing data science it is most recommand to utilize [Anaconda](https://www.anaconda.com/). It is a very
@@ -104,7 +106,7 @@ Most common option flags for pip installs.
 ```sh
 pip install SomePackage           # installs latest version
 pip install SomePackage==1.0.4    # specific version
-pip install "SomePackage>=1.0.4"  # minimum version
+pip install SomePackage>=1.0.4  # minimum version
 pip install -r requirements.txt   # install all packages specified in the requirements.txt file
 pip install -U SomePackage        # upgrades installed package
 pip install --pre SomePackage     # installs the pre-release version
@@ -117,6 +119,9 @@ suported or updated version on PyPi or Anaconda but a `setup.py` file and a `req
 `pip install git+https://github.com/UserName/Package`. This will install the project into your currently activated environment.
 {: .notice--info}
 
+### Pipenv Install
+
+
 ### Conda Install
 
 The packages for conda installs will be requested from the [Anaconda website](https://pypi.org).
@@ -124,13 +129,16 @@ Most common option flags for conda installs.
 
 ```sh
 conda install --help                 # command line help
-conda install SomePackag             # installs latest version
-conda install -y SomePackag          # ignores confirmation
-conda install -f SomePackag          # force installation even if the package is already installed
+conda install SomePackage             # installs latest version
+conda install -y SomePackage          # ignores confirmation
+conda install -f SomePackage          # force installation even if the package is already installed
 conda install -n EnvName SomePackage # installs package into the specified environment
 conda install SomePackage==1.0.4     # specific version
-pip install "SomePackage>=1.0.4"     # minimum version
+pip install SomePackage>=1.0.4     # minimum version
 pip install -r requirements.txt      # install all packages specified in a requirements.txt file
 pip install --upgrade SomePackage    # upgrades installed package
 pip install --pre SomePackage        # installs the pre-release version
 ```
+
+### Import package
+
