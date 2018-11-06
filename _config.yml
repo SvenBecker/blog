@@ -15,8 +15,7 @@ remote_theme             : "mmistakes/minimal-mistakes" # github pages only supp
 minimal_mistakes_skin    : "mint" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "CoolSiteName"
+locale                   : "NotAPlaceholder"
 title_separator          : "-"
 name                     : "Sven Becker"
 description              : "Blog, Tutorials and Challenges."
