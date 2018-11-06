@@ -40,7 +40,6 @@ label:active:after {
 	width: 130px;
 }
 
-// centering
 body {
 	display: flex;
 	justify-content: center;
