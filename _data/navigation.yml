@@ -8,8 +8,6 @@ main:
     url: /gallery-archive/
   - title: "About"
     url: /about/
-  - title: "Home"
-    url: /
 
 # sidebar navigation list sample
 sidebar-sample:
