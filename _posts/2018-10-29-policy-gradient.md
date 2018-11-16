@@ -1,6 +1,18 @@
 ---
 title: Policy Gradient Algorithms
 date: 2018-10-23
+header:
+    overlay_image: https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cf14450e7ab6e30d85800342f9ed485&auto=format&fit=crop&w=1500&q=80
+    teaser: https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cf14450e7ab6e30d85800342f9ed485&auto=format&fit=crop&w=1500&q=80
+    og_image: https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cf14450e7ab6e30d85800342f9ed485&auto=format&fit=crop&w=1500&q=80
+    overlay_filter: 0.7
+excerpt: "An Introduction to Policy Gradient Algorithms"
+categories:
+    - Deep Learning
+    - Academic
+tags:
+    - Policy Gradient
+    - Reinforcement Learning
 ---
 
 **Notice!** This page is still in progress!

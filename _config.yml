@@ -12,11 +12,11 @@
 
 # theme                    : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes" # github pages only supports remoted themes outside the ones they offer
-minimal_mistakes_skin    : "air" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Not A PlaceHolder"
+title                    : "NotAPlaceHolder"
 title_separator          : "-"
 name                     : "Sven Becker"
 description              : "Blog, Tutorials and Challenges."
@@ -299,7 +299,7 @@ defaults:
       layout: single
       toc: true
       toc_sticky: true
-      toc_label: "Table of Content"
+      toc_label: "Table of Contents"
       author_profile: true
       read_time: true
       comments: true
@@ -327,7 +327,7 @@ defaults:
       comments: true
       toc: true
       toc_sticky: true
-      toc_label: "Table of Content"
+      toc_label: "Table of Contents"
       sidebar:
         nav: "sidebar-tutorials"
       feature_row:

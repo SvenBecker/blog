@@ -2,9 +2,28 @@
 title: Package Managing in Python
 date: 2018-10-19T16:35:28+02:00
 header:
-   overlay_image: /assets/images/galleries/g1_overlay.jpeg
-   teaser: /assets/images/galleries/g1_teaser.jpeg
-excerpt: How to efficiently manage the dependencies in your Python projects. A short introduction to virtual environments and package installation.
+   overlay_image: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
+   teaser: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
+   og_image: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
+   overlay_filter: 0.7
+excerpt: Short introduction to virtual environments and package installation.
+feature_row:
+  - image_path: https://miro.medium.com/max/900/1*FjqLQ08MEk6jSKxpzjCcVw.jpeg
+    alt: "VirtualEnv"
+    caption: "Image credit: [**Ugochukwu Mazi**](https://medium.com/the-andela-way/configuring-python-environment-with-virtualenvwrapper-8745c2895745)"
+    url: "https://virtualenv.pypa.io/en/latest/"
+    btn_class: "btn--primary"
+    btn_label: "VirtualEnv Docs"
+  - image_path: https://pipenv.readthedocs.io/en/latest/_static/pipenv.png
+    alt: "PipEnv"
+    url: "https://pipenv.readthedocs.io/en/latest/"
+    btn_class: "btn--primary"
+    btn_label: "PipEnv Docs"
+  - image_path: https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png
+    alt: "Anaconda"
+    url: "https://www.anaconda.com"
+    btn_class: "btn--primary"
+    btn_label: "Anaconda Website"
 ---
 
 # Package Managing in Python
@@ -282,3 +301,5 @@ sys.path.add("path/to/project")
 
 **Notice!** The *path/to/project* may also be relative or absolute!
 {: .notice--primary}
+
+{% include feature_row %}
