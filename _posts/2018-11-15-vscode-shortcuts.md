@@ -166,12 +166,6 @@ Just press `Ctrl+Shift+P` respectifely `⇧⌘P` and by start typing `Markdown` 
 * *Markdown: Toggle math environment*
 * *Markdown: Toggle unordered list*
 
-### Further Readings
-
-[Traversy Media](https://www.youtube.com/user/TechGuyWeb) also provides an interesting crash course video regarding basic workflows with Markdown:
-
-<iframe width="640" height="360" src="https://www.youtube.com/user/TechGuyWeb" frameborder="0" allowfullscreen></iframe>
-
 **Tip!** Adam Pritchard has created a nice [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis) regarding common Markdown tasks.
 {: .notice--primary}
 

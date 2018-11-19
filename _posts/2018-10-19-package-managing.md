@@ -1,29 +1,12 @@
 ---
 title: Package Managing in Python
-date: 2018-10-19T16:35:28+02:00
+date: 2018-11-19T16:35:28+02:00
 header:
    overlay_image: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
    teaser: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
    og_image: https://images.unsplash.com/photo-1512418490979-92798cec1380?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8cb2baaa0a6f84dcc3d17a1991c905e7&auto=format&fit=crop&w=1500&q=80
    overlay_filter: 0.7
 excerpt: Short introduction to virtual environments and package installation.
-feature_row:
-  - image_path: https://miro.medium.com/max/900/1*FjqLQ08MEk6jSKxpzjCcVw.jpeg
-    alt: "VirtualEnv"
-    caption: "Image credit: [**Ugochukwu Mazi**](https://medium.com/the-andela-way/configuring-python-environment-with-virtualenvwrapper-8745c2895745)"
-    url: "https://virtualenv.pypa.io/en/latest/"
-    btn_class: "btn--primary"
-    btn_label: "VirtualEnv Docs"
-  - image_path: https://pipenv.readthedocs.io/en/latest/_static/pipenv.png
-    alt: "PipEnv"
-    url: "https://pipenv.readthedocs.io/en/latest/"
-    btn_class: "btn--primary"
-    btn_label: "PipEnv Docs"
-  - image_path: https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png
-    alt: "Anaconda"
-    url: "https://www.anaconda.com"
-    btn_class: "btn--primary"
-    btn_label: "Anaconda Website"
 ---
 
 # Package Managing in Python
@@ -69,8 +52,7 @@ I would have to type:
 virtualenv ~/Documents/EnvName
 ```
 
-*EnvName* will be a folder containing some subfolders depending on your OS. To activate the example virtual environment 
-you have to use the command:
+*EnvName* will be a folder containing some subfolders depending on your OS. To activate the example virtual environment you have to use the command:
 
 ```sh
 source ~/Documents/EnvName/bin/activate # normal activation
@@ -87,6 +69,8 @@ See the [official Docs](https://virtualenv.pypa.io/en/latest/userguide/) for mor
 
 > Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.
 
+> <cite><a href="https://pipenv.readthedocs.io/en/latest/">Pipenv</a></cite>
+
 [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a much more versatile way to manage your virtual environments as well as your packages contained in those environments. It combines *pip*, *virtualenv* and *PipFile*.
 
 For non scientific projects I would highly recommand using Pipenv.
@@ -94,10 +78,9 @@ For non scientific projects I would highly recommand using Pipenv.
 ## Conda Environment
 
 But when doing data science it is most recommand to utilize [Anaconda](https://www.anaconda.com/). It is a very
-popular package managing tool which comes with all the most important data science tools like numpy, pandas,
-scipy, scikit-learn and matplotlib and solves all the dependency issues regarding those packages.
-Before we can start you have to download [Anaconda](https://www.anaconda.com/download/). Select your OS and your prefered
-python version (at this point I would recommand python 3.6) and click on `Download`.
+popular package managing tool which comes with all the most important data science tools like *NumPy*, *Pandas*,
+*SciPy*, *Scikit-learn* and *Matplotlib* and solves all the dependency issues regarding those packages.
+Before we can start you have to download [Anaconda](https://www.anaconda.com/download/). Select your operating system and your prefered Python version and click on `Download`.
 
 ### Create the virtual environment
 
@@ -107,19 +90,19 @@ When in terminal you just have to type in
 
 ```sh
 conda create -n EnvName                  # creates an virtual environment named EnvName
-conda create -n EnvName python=3.7       # specifies python version to 3.7
+conda create -n EnvName python=3.6       # specifies Python version to be v3.6
 conda create --clone EnvName -n Env2     # creates an exact clone of EnvName named Env2
 ```
 
 to create your Anaconda environment. For this to work you have to make sure your Anaconda folder is linked to your PATH.
-Normaly you will be asked during the installation process if you want to add Anaconda to your path. If that is not working for you for some 
-reason you have to set it manually.  You can do this on Windows by opening the Command Prompt or Powershell and typing `PATH=%PATH%;C:\Anaconda3;C:\Anaconda3\Scripts\` depending 
+Normaly you will be asked during the installation process if you want to add Anaconda to your path. If that is not working for you for some
+reason you have to set it manually.  You can do this on Windows by opening the Command Prompt or Powershell and typing `PATH=%PATH%;C:\Anaconda3;C:\Anaconda3\Scripts\` depending
 where your Anaconda folder is located. On Linux and MaxOS open your `.bashrc` and add the line `export PATH="/<path to anaconda>/bin:$PATH"` to your `.bashrc` file.
 For more information and help on the installation process see the [Anaconda FAQ](https://docs.anaconda.com/anaconda/faq/).
 
-To view all your conda environments you can either type `conda info --envs` or `conda env list`. It is also possible to save your environment as a txt file
+To view all your conda environments you can either type `conda info --envs` or `conda env list`. It is also possible to save your environment as a *txt* file
 `conda list --explicit > EnvName.txt` and/or to built your environment using a txt file `conda env create --file EnvName.txt`.
-If you want to see what packages are installed in your  environemnts you can type `conda list -n EnvName` or in case your environment is already 
+If you want to see what packages are installed in your  environemnts you can type `conda list -n EnvName` or in case your environment is already
 activated (see next chapter) `conda list`. When using conda
 and your environment is not yet activated you have to specify all your conda commands by adding the `-n EnvName` or `--name EnvName` flag.
 
@@ -166,7 +149,7 @@ Most common option flags for pip installs.
 ```sh
 pip install SomePackage           # installs latest version
 pip install SomePackage==1.0.4    # specific version
-pip install SomePackage>=1.0.4  # minimum version
+pip install SomePackage>=1.0.4    # minimum version
 pip install -r requirements.txt   # install all packages specified in the requirements.txt file
 pip install -U SomePackage        # upgrades installed package
 pip install --pre SomePackage     # installs the pre-release version
@@ -175,28 +158,37 @@ pip install --pre SomePackage     # installs the pre-release version
 See the examples provided on [pip.pypa.io](https://pip.pypa.io/en/stable/reference/pip_install/#examples) for more information.
 
 **Tipp!** If you want to use a project hosted on [GitHub](https://github.com) and this project has not (yet) a
-suported or updated version on PyPi or Anaconda but a `setup.py` file and a `requirments.txt` file you can install it by using the command
+suported or updated version on PyPi or Anaconda but a `setup.py` and `requirments.txt` file you can install it by using the command
 `pip install git+https://github.com/UserName/Package`. This will install the project into your currently activated environment.
 {: .notice--info}
 
 ## Pipenv Install
 
+The Pipenv installation process is very similar to the pip install process. You can basically use the same flags.
+A notable difference is the usage of a `Pipfile` and `Pipfile.lock` which are replacements for the `requirments.txt` file.
+
+```sh
+pipenv install                      # install from Pipfile if provided
+pipenv install SomePackage          # equivalent to pip installs
+pipenv install -r requirements.txt  # this will create Pipfile and perform an installation
+```
+
 ## Conda Install
 
 The packages for conda installs will be requested from the [Anaconda website](https://pypi.org).
-Most common option flags for conda installs.
+Most common option flags for conda installs:
 
 ```sh
-conda install --help                 # command line help
+conda install --help                  # command line help
 conda install SomePackage             # installs latest version
 conda install -y SomePackage          # ignores confirmation
 conda install -f SomePackage          # force installation even if the package is already installed
-conda install -n EnvName SomePackage # installs package into the specified environment
-conda install SomePackage==1.0.4     # specific version
-pip install SomePackage>=1.0.4     # minimum version
-pip install -r requirements.txt      # install all packages specified in a requirements.txt file
-pip install --upgrade SomePackage    # upgrades installed package
-pip install --pre SomePackage        # installs the pre-release version
+conda install -n EnvName SomePackage  # installs package into the specified environment
+conda install SomePackage==1.0.4      # specific version
+pip install SomePackage>=1.0.4        # minimum version
+pip install -r requirements.txt       # install all packages specified in a requirements.txt file
+pip install --upgrade SomePackage     # upgrades installed package
+pip install --pre SomePackage         # installs the pre-release version
 ```
 
 # Import Packages and Modules
@@ -302,4 +294,24 @@ sys.path.add("path/to/project")
 **Notice!** The *path/to/project* may also be relative or absolute!
 {: .notice--primary}
 
-{% include feature_row %}
+# Further Readings
+
+**Articels:**
+
+- [Pipenv: A Guide to the New Python Packaging Tool](https://realpython.com/pipenv-guide/)
+- [Pipenv & Virtual Environments](https://docs.python-guide.org/dev/virtualenvs/)
+
+**Videos:**
+
+- [Corey Schafer - Python Tutorial: Anaconda - Installation and Using Conda](https://www.youtube.com/watch?v=YJC6ldI3hWk)
+- [Corey Schafer - Python Tutorial: Pipenv - Easily Manage Packages and Virtual Environments](https://www.youtube.com/watch?v=zDYL22QNiWk)
+- [Corey Schafer - Python Tutorial: virtualenv and why you should use virtual environments](https://www.youtube.com/watch?v=N5vscPTWKOk)
+- [Kenneth Reitz - Pipenv: The Future of Python Dependency Management - PyCon 2018](https://www.youtube.com/watch?v=GBQAKldqgZs&t=860s)
+
+# References
+
+- [Anaconda Website](https://www.anaconda.com/)
+- [Anaconda Docs](https://conda.io/docs/user-guide/getting-started.html)
+- [Pipenv Docs](https://pipenv.readthedocs.io/en/latest/)
+- [Virtualenv Docs](https://virtualenv.pypa.io/en/latest/)
+- [Pip Docs](https://pip.pypa.io/en/stable/user_guide/)

@@ -1,11 +1,12 @@
 # main links
 main:
-  #-url: /year-archive/
+  - title: "Posts"
+    url: /year-archive/
   #-url: /tutorials-archive/
   #- title: "Gallery"
     #url: /gallery-archive/
-  #- title: "About"
-    #url: /about/
+  - title: "About"
+    url: /about/
 
 # sidebar navigation list sample
 sidebar-sample:

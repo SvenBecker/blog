@@ -7,6 +7,6 @@ entries_layout: grid
 sidebar:
   nav: "sidebar-blog"
 header:
-  overlay_image: /assets/images/background.jpeg
-  overlay_filter: 0.1
+  #overlay_image: /assets/images/background.jpeg
+  #overlay_filter: 0.1
 ---
