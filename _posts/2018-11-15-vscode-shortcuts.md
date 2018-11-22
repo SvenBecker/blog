@@ -44,55 +44,58 @@ This includes file managament, navigation, display options or editor management.
 | `Ctrl+,`           | `⌘`       | `Ctrl+,`           | Open user settings           |
 | `Ctrl+K Ctrl+S`    | `⌘K ⌘S`   | `Ctrl+K Ctrl+S`    | Open user keyboard shortcuts |
 
-
 ### Editing
 
-| Windows            | MacOS     | Linux              | Description                     |
-| ------------------ | --------- | ------------------ | ------------------------------- |
-| `Ctrl+X`           | `^⌘F`     | `Ctrl+T`           | Cut                             |
-| `Ctrl+C`           | `^⇧G`     | `Ctrl+T`           | Copy                            |
-| `Ctrl+A`           | `^⇧G`     | `Ctrl+A`           | Select all                      |
-| `Alt+`             | `⌥▲/⌥▼`   | `Alt+`             | Move line up/down               |
-| `Shift+Alt+`       | `⌥▲/⌥▼`   | `Shift+Alt+`       | Copy line up/down               |
-| `Ctrl+Shift+K`     | `⌥▲/⌥▼`   | `Ctrl+Shift+K`     | Delete line                     |
-| `Ctrl+Enter`       | `⌥▲/⌥▼`   | `Ctrl+Enter`       | Insert line below               |
-| `Ctrl+Shift+Enter` | `⌥▲/⌥▼`   | `Ctrl+Shift+Enter` | Insert line above               |
-| `Home/End`         | `⌘◀︎/⌘▶︎` | `Home/End`         | Go to beginning/end of the line |
-| `Ctrl+Home/End`    | `⌥▲/⌥▼`   | `Ctrl+Home/End`    | Go to beginning/end of the file |
-| `Ctrl+`            | `⌥▲/⌥▼`   | `Ctrl+`            | Scroll line up/down             |
-| `Ctrl+PgUp/PgDn`   | `⌥▲/⌥▼`   | `Ctrl+PgUp/PgDn`   | Scroll page up/down             |
-| `Ctrl+K Ctrl+C`    | `⌥▲/⌥▼`   | `Ctrl+K Ctrl+C`    | Add line comment                |
-| `Ctrl+K Ctrl+U`    | `⌥▲/⌥▼`   | `Ctrl+K Ctrl+U`    | Remove line comment             |
-| `Shift+Alt+A`      | `⌥▲/⌥▼`   | `Shift+Alt+A`      | Toggle block comment            |
+| Windows            | MacOS         | Linux              | Description                     |
+| ------------------ | ------------- | ------------------ | ------------------------------- |
+| `Ctrl+X`           | `⌘X`          | `Ctrl+T`           | Cut                             |
+| `Ctrl+C`           | `⌘C`          | `Ctrl+T`           | Copy                            |
+| `Ctrl+A`           | `⌘A`          | `Ctrl+A`           | Select all                      |
+| `Alt+`             | `⌥▲/⌥▼`       | `Alt+`             | Move line up/down               |
+| `Shift+Alt+`       | `⇧⌥▲/⇧⌥▼`     | `Shift+Alt+`       | Copy line up/down               |
+| `Ctrl+Shift+K`     | `⇧⌘K`         | `Ctrl+Shift+K`     | Delete line                     |
+| `Ctrl+Enter`       | `⌘Enter`      | `Ctrl+Enter`       | Insert line below               |
+| `Ctrl+Shift+Enter` | `⇧⌘Enter`     | `Ctrl+Shift+Enter` | Insert line above               |
+| `Home/End`         | `⌘◀︎/⌘▶︎`     | `Home/End`         | Go to beginning/end of the line |
+| `Ctrl+Home/End`    | `⌘▲/⌘▼`       | `Ctrl+Home/End`    | Go to beginning/end of the file |
+| `Ctrl+`            | `^PgUp/^PgDn` | `Ctrl+`            | Scroll line up/down             |
+| `Ctrl+PgUp/PgDn`   | `⌘PgUp/⌘PgDn` | `Ctrl+PgUp/PgDn`   | Scroll page up/down             |
+| `Ctrl+K Ctrl+C`    | `⌘K ⌘C`       | `Ctrl+K Ctrl+C`    | Add line comment                |
+| `Ctrl+K Ctrl+U`    | `⌘K ⌘U`       | `Ctrl+K Ctrl+U`    | Remove line comment             |
+| `Shift+Alt+A`      | `⇧⌥A`         | `Shift+Alt+A`      | Toggle block comment            |
+| `Alt+Z`            | `⌥Z`          | `Alt+Z`            | Toggle word wrap                |
 
 ### File Management
 
-| Windows          | MacOS  | Linux            | Description                             |
-| ---------------- | ------ | ---------------- | --------------------------------------- |
-| `Ctrl+O`         | `⌘O`   | `Ctrl+O`         | Open file                               |
-| `Ctrl+N`         | `⌘N`   | `Ctrl+N`         | New file                                |
-| `Ctrl+S`         | `⌘S`   | `Ctrl+S`         | Save file                               |
-| `Ctrl+Shift+S`   | `⌘S`   | `Ctrl+Shift+S`   | Save file as                            |
-| `Ctrl+K S`       | `⌘S`   | `Ctrl+K S`       | Save all                                |
-| `Ctrl+F4`        | `⌘S`   | `Ctrl+F4`        | Close                                   |
-| `Ctrl+K Ctrl+W`  | `⌘S`   | `Ctrl+K Ctrl+W`  | Close all                               |
-| `Ctrl+Shift+T`   | `⌘S`   | `Ctrl+Shift+T`   | Reopen closed editor                    |
-| `Ctrl+Tab`       | `^Tab` | `Ctrl+Tab`       | Open next file                          |
-| `Ctrl+Shift+Tab` | `⌘T`   | `Ctrl+Shift+Tab` | Open previouse file                     |
-| `Ctrl+K P`       | `⌘K P` | `Ctrl+K P`       | Copy path of active file                |
-| `Ctrl+K R`       | `⌘K R` | `Ctrl+K R`       | Reveal open file in Explorer            |
-| `Ctrl+K O`       | `⌘K O` | `Ctrl+K O`       | Show active file in new window/instance |
+| Windows          | MacOS   | Linux            | Description                             |
+| ---------------- | ------- | ---------------- | --------------------------------------- |
+| `Ctrl+O`         | `⌘O`    | `Ctrl+O`         | Open file                               |
+| `Ctrl+N`         | `⌘N`    | `Ctrl+N`         | New file                                |
+| `Ctrl+S`         | `⌘S`    | `Ctrl+S`         | Save file                               |
+| `Ctrl+Shift+S`   | `⇧⌘S`   | `Ctrl+Shift+S`   | Save file as                            |
+| `Ctrl+K S`       | `⌥⌘S`   | `Ctrl+K S`       | Save all                                |
+| `Ctrl+F4`        | `⌘W`    | `Ctrl+F4`        | Close                                   |
+| `Ctrl+K Ctrl+W`  | `⌘K ⌘W` | `Ctrl+K Ctrl+W`  | Close all                               |
+| `Ctrl+Shift+T`   | `⇧⌘T`   | `Ctrl+Shift+T`   | Reopen closed editor                    |
+| `Ctrl+Tab`       | `^Tab`  | `Ctrl+Tab`       | Open next file                          |
+| `Ctrl+Shift+Tab` | `⇧Tab`  | `Ctrl+Shift+Tab` | Open previouse file                     |
+| `Ctrl+K P`       | `⌘K P`  | `Ctrl+K P`       | Copy path of active file                |
+| `Ctrl+K R`       | `⌘K R`  | `Ctrl+K R`       | Reveal open file in Explorer            |
+| `Ctrl+K O`       | `⌘K O`  | `Ctrl+K O`       | Show active file in new window/instance |
 
-### Insert
+### Rich Language Support
 
-
-| Windows   | MacOS                   | Linux | Description |
-| --------- | ----------------------- | ----- | ----------- |
-| `^⌘Space` | Insert emojis & symbols |
-
+| Windows            | MacOS     | Linux              | Description                 |
+| ------------------ | --------- | ------------------ | --------------------------- |
+| `Ctrl+Space`       | `^Space`  | `Ctrl+Space`       | Trigger suggestion          |
+| `Ctrl+Shift+Space` | `⇧⌘Space` | `Ctrl+Shift+Space` | Trigger parameter hints     |
+| `F12`              | `F12`     | `F12`              | Go to definition            |
+| `Alt+F12`          | `⌥F12`    | `Ctrl+Shift+F10`   | Peek definition             |
+| `Ctrl+K F12`       | `⌘K F12`  | `Ctrl+K F12`       | Open definition on the side |
+| `Shift+F12`        | `⇧F12`    | `Shift+F12`        | Open definition on the side |
+|                    | `^⌘Space` |                    | Insert emojis & symbols     |
 
 ### Navigation
-
 
 | Windows        | MacOS                       | Linux          | Description                        |
 | -------------- | --------------------------- | -------------- | ---------------------------------- |
