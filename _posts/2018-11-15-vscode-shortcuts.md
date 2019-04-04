@@ -33,14 +33,33 @@ This includes file managament, navigation, display options or editor management.
 
 ### General
 
-| Windows            | MacOS     | Linux              | Description                  |
-| ------------------ | --------- | ------------------ | ---------------------------- |
-| `Ctrl+Shift+P, F1` | `⇧⌘P, F1` | `Ctrl+Shift+P, F1` | Show command palette         |
-| `Ctrl+P`           | `⌘P`      | `Ctrl+P`           | Quick open                   |
-| `Ctrl+Shift+N`     | `⇧⌘N`     | `Ctrl+Shift+N`     | New window/instance          |
-| `Ctrl+Shift+W`     | `⌘W`      | `Ctrl+Shift+W`     | Close window/instance        |
-| `Ctrl+,`           | `⌘`       | `Ctrl+,`           | Open user settings           |
-| `Ctrl+K Ctrl+S`    | `⌘K ⌘S`   | `Ctrl+K Ctrl+S`    | Open user keyboard shortcuts |
+| Windows            | MacOS     | Linux              | Description                       |
+| ------------------ | --------- | ------------------ | --------------------------------- |
+| `Ctrl+Shift+P, F1` | `⇧⌘P, F1` | `Ctrl+Shift+P, F1` | Show command palette              |
+| `Ctrl+P`           | `⌘P`      | `Ctrl+P`           | Quick open                        |
+| `Ctrl+Shift+N`     | `⇧⌘N`     | `Ctrl+Shift+N`     | New window/instance               |
+| `Ctrl+Shift+W`     | `⌘W`      | `Ctrl+Shift+W`     | Close window/instance             |
+| `Ctrl+,`           | `⌘`       | `Ctrl+,`           | Open user settings                |
+| `Ctrl+K Ctrl+S`    | `⌘K ⌘S`   | `Ctrl+K Ctrl+S`    | Open user keyboard shortcuts      |
+| `Ctrl+K Ctrl+T`    | `⌘K ⌘T`   | `Ctrl+K Ctrl+T`    | Change your theme                 |
+| `Ctrl+Shift+M`     | `⇧⌘M`     | `Ctrl+Shift+M`     | Show errors and warnings          |
+| `F8/⇧F8`           | `F8/⇧F8`  | `F8/⇧F8`           | Cycle through errors and warnings |
+
+##### Open command palette (`F1`)
+
+![open-command-palette](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/OpenCommandPalatte.gif)
+
+##### Quick open files (`⌘P` or `Ctrl+P`)
+
+![quick-open-files](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/QuickOpen.gif)
+
+##### Change theme (`⌘K ⌘T` or `Ctrl+K Ctrl+T`)
+
+![change-theme](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/PreviewThemes.gif)
+
+##### Create file
+
+![create-file](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/create_open_file.gif)
 
 ### Editing
 
@@ -77,7 +96,7 @@ This includes file managament, navigation, display options or editor management.
 | `Ctrl+K P`      | `⌘K P`       | `Ctrl+K P`      | Copy path of active file                |
 | `Ctrl+K R`      | `⌘K R`       | `Ctrl+K R`      | Reveal open file in Explorer            |
 | `Ctrl+K O`      | `⌘K O`       | `Ctrl+K O`      | Show active file in new window/instance |
-| `Ctrl+Enter`        | `^Enter`     | `Ctrl+Enter`        | Open file on site                       |
+| `Ctrl+Enter`    | `^Enter`     | `Ctrl+Enter`    | Open file on site                       |
 | `Ctrl+T`        | `^Tab/^⇧Tab` | `Ctrl+T`        | Open next / previous                    |
 
 ### Rich Language Support
@@ -105,7 +124,7 @@ What is *rich language support*? When I read this term for the first time, I had
 | `Ctrl+Shift+M` | `^⇧M`     | `Ctrl+Shift+M` | Show problem panel                 |
 | `F8/Shift+F8`  | `F8/⇧F8`  | `F8/Shift+F8`  | Go to next/previouse error warning |
 | `Alt+←/Alt+→`  | `⌥◀/⌥▶︎`  | `Alt+←/Alt+→`  | Go backward/forward (skips spaces) |
-| `Ctrl+↑/↓`       | `⌘▲/⌘▼`   | `Ctrl+↑/↓`       | Scroll up/Scroll down              |
+| `Ctrl+↑/↓`     | `⌘▲/⌘▼`   | `Ctrl+↑/↓`     | Scroll up/Scroll down              |
 | `Ctrl+P`       | `⌘◀︎/⌘▶︎` | `Ctrl+P`       | Go to start/end of the line        |
 
 ### Display
@@ -120,12 +139,48 @@ What is *rich language support*? When I read this term for the first time, I had
 | `Ctrl+Shift+X` | `⇧⌘X`  | `Ctrl+Shift+X` | Show extensions         |
 | `Ctrl+Shift+U` | `⇧⌘U`  | `Ctrl+Shift+U` | Open ouput panel        |
 | `Ctrl+K Z`     | `⌘K Z` | `Ctrl+K Z`     | Toggle Zen mode         |
+| `Ctrl+B`       | `⌘B`   | `Ctrl+B`       | Toggle Sidebar          |
 
-### Integrated Terminal
+##### Toggle Sidebar (`⌘B` or `Ctrl+B`)
 
-| Shortcut | Description         |
-| -------- | ------------------- |
-| `^⇧´`    | Create new terminal |
+![toggle-sidebar](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/toggle_side_bar.gif)
+
+##### Toggle Zen Mode (`⌘K Z` or `Ctrl+K Z`)
+
+![toggle-zen-mode](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/zen_mode.gif)
+
+## Launch VSCode From Console
+
+To launch VSCode from console, you first have to make sure to add it to your path. From there one you can type one of the following to open VSCode:
+
+```bash
+# open vscode
+code
+
+# open vscode with current directory
+code .
+
+# open the current directory in the most recently used vscode window
+code -r .
+
+# create a new window
+code -n
+
+# change the language
+code --locale=de
+
+# open diff editor
+code --diff <file1> <file2>
+
+# open file at specific line and column <file:line[:character]>
+code --goto package.json:10:5
+
+# see help options
+code --help
+
+# disable all extensions
+code --disable-extensions .
+```
 
 ## HTML & Emmet
 
@@ -148,7 +203,7 @@ This section refers to working with *Markdown* and the awesome [Markdown All in 
 | `Ctrl+K V`     | `⌘K V` | `Ctrl+K V`     | Open Markdown preview on the side                |
 | `Ctrl+B`       | `⌘B`   | `Ctrl+B`       | Toggle `**bolt**` => **bolt** (overrides toggle) |
 | `Ctrl+I`       | `⌘I`   | `Ctrl+I`       | Toggle `*italic*` => *italic*                    |
-| `Ctrl+M`       | `⌘I`   | `Ctrl+M`       | Toggle math environment `$E=mc^2$` => $E=mc^2$   |
+| `Ctrl+M`       | `⌘M`   | `Ctrl+M`       | Toggle math environment `$E=mc^2$` => $E=mc^2$   |
 | `Alt+S`        | `⌘I`   | `Alt+S`        | Toggle strikethrough `~~word~~` => ~~word~~      |
 | `Alt+Shift+F`  | `⇧⌥F`  | `Alt+Shift+F`  | Table formatter                                  |
 
@@ -160,7 +215,7 @@ You should see the option *Include Languages* and then can modify this setting i
 
 ### List editing
 
-![on-enter-key](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-enter-key1.gif) ![on-tab](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-tab-key.gif) 
+![on-enter-key](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-enter-key1.gif) ![on-tab](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-tab-key.gif)
 
 ![on-backspace](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-backspace-key.gif) ![marker-fixing](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/marker-fixing.gif)
 
@@ -179,6 +234,7 @@ Just press `Ctrl+Shift+P` respectifely `⇧⌘P` and by start typing `Markdown` 
 
 ## References
 
+* [VS Docs - Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 * [VS Shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 * [VS Shortcuts for MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 * [VS Shortcuts for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
