@@ -160,15 +160,9 @@ You should see the option *Include Languages* and then can modify this setting i
 
 ### List editing
 
-![](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-enter-key1.gif)
+![on-enter-key](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-enter-key1.gif) ![on-tab](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-tab-key.gif) 
 
-![](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-enter-key2.gif)
-
-![](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-tab-key.gif)
-
-![](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-backspace-key.gif)
-
-![](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/marker-fixing.gif)
+![on-backspace](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/on-backspace-key.gif) ![marker-fixing](https://github.com/neilsustc/vscode-markdown/raw/master/images/gifs/marker-fixing.gif)
 
 There are also some useful command like for example automatically create a table of contents. 
 Just press `Ctrl+Shift+P` respectifely `⇧⌘P` and by start typing `Markdown` the following entries should pop up:
