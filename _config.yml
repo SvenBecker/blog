@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint" #"default" "air", "aqua", "contrast", "dark", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "<img src='brand_mark.png' class='img-fluid' alt='Brand'>"
+title                    : "<img src='brand.svg' class='img-fluid' alt='Brand' width='448' hight='64'>"
 title_separator          : "-"
 name                     : "Sven Becker"
 description              : "Blog, Tutorials and Challenges."
