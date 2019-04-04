@@ -11,11 +11,8 @@ excerpt: Short introduction to virtual environments and package installation.
 
 # Package Managing in Python
 
-**Notice!** This page is still in progress!
-{: .notice--primary}
-
-This is a short overview of package managing in python utilizing *pip*, *virtualenv*, *pipenv* and *anaconda*.
-The general workflow while working on python projects can be visualized by this steps:
+This is a short overview of package managing in Python utilizing *pip*, *virtualenv*, *pipenv* and *anaconda*.
+The general workflow while working on Python projects can be visualized by this steps:
 
 1. Create a virtual environment         (if not already present)
 2. Activate the virtual environment
@@ -25,7 +22,7 @@ The general workflow while working on python projects can be visualized by this 
 
 # Setting up a Virtual Environment
 
-First it is important to create a virutal environment for your project, mostly because of specified package dependencies
+First it is important to create a virtual environment for your project, mostly because of specified package dependencies
 (some packages only work on specific python versions whereas others do not) and/or to avoid name conflict in your
 python modules and packages.
 
